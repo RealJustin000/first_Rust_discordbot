@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: rust-discord-bot
+    env: docker
+    plan: free
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: GUILD_ID
+        sync: false
